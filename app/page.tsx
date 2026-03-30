@@ -207,10 +207,10 @@ const editorialBoard = [
 ];
 
 const stats = [
-  { label: "Published Articles", value: "22+", icon: FileText },
-  { label: "Volumes", value: "2", icon: BookOpen },
-  { label: "ISSN (Online)", value: "3048-7315", icon: Users },
-  { label: "ISSN (Print)", value: "3107-3727", icon: Download },
+  { label: "Published Articles", value: "22+", icon: FileText,   color: "from-blue-500/10 to-blue-600/5",},
+  { label: "Volumes", value: "2", icon: BookOpen, color: "from-green-500/10 to-green-600/5", },
+  { label: "Acceptance Rate", value: "39.2%", icon: Users, color: "from-purple-500/10 to-purple-600/5", },
+ 
 ];
 
 export default function Home() {
@@ -225,12 +225,12 @@ export default function Home() {
             {/* Search Overlay */}
             <div className="flex flex-col items-center justify-center z-10 py-12">
               <div className="flex items-center mb-4 gap-10">
-                <img 
+                {/* <img 
                   src="/pic1.jpg"
                   alt="Journal Logo"
                   className="ml-10 h-40 w-auto"
-                />
-                <h1 className="text-3xl md:text-5xl font-bold text-black mb-0">
+                /> */}
+                <h1 className="text-xl text-center md:5xl lg:text-5xl  font-bold text-black mb-0">
                   The International Journal of Bharatiya Knowledge System
                 </h1>
               </div>
@@ -241,8 +241,8 @@ export default function Home() {
                 Published by Vidya Bharati Uchcha Shiksha Sansthan (VBUSS)
               </p>
               <div className="w-full max-w-4xl">
-                <div className="rounded-2xl bg-white/95 backdrop-blur-sm p-5 shadow-2xl">
-                  <GooeyInputDemo />
+                <div className="rounded-2xl p-5">
+                  {/* <GooeyInputDemo /> */}
                 </div>
               </div>
             </div>
@@ -251,12 +251,12 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-10 px-6 border-b border-border">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+      <section className="py-10 px-6  border-border ">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 ">
           {stats.map((stat, i) => (
-            <div key={i} className="flex items-center gap-4">
-              <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                <stat.icon className="size-5 text-primary" />
+            <div key={i} className={`flex items-center gap-4 p-2 rounded-2xl bg-gradient-to-br ${stat.color}`}>
+              <div className="size-12 rounded-xl flex items-center justify-center bg-gradient-to-br-from-blue-500/10 to-blue-600/5">
+                <stat.icon className="size-5 text-primary " />
               </div>
               <div>
                 <div className="text-xl font-bold text-foreground">
@@ -272,7 +272,7 @@ export default function Home() {
       </section>
 
       {/* Subject Categories */}
-      <section className="py-16 px-6">
+      {/* <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
@@ -326,16 +326,16 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Latest Publications & Editorial Board */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-1 gap-8">
           {/* Latest Publications */}
           <div className="lg:col-span-2">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold text-foreground">
-                Latest Publications
+                Volume 2, August 2025
               </h2>
               <a
                 href="/archives"
@@ -344,7 +344,14 @@ export default function Home() {
                 View all <ArrowRight className="size-4" />
               </a>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-5 space-x-5 grid grid-cols-1">
+
+ <span className="bg-card rounded-xl border border-border p-5 hover:shadow-md transition-shadow group block font-semibold group-hover:text-primary transition-colors text-foreground">
+                    <a href="https://vbuss.org/sites/vbuss.org/files/Editorial.pdf" target="_blank" rel="noopener noreferrer">
+                      Editorial
+                    </a>
+                  </span>
+
               {latestPublications.map((pub, i) => (
                 <a
                   key={i}
@@ -355,8 +362,9 @@ export default function Home() {
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1 min-w-0">
+                     
                       <span className="text-[10px] uppercase tracking-wider text-muted-foreground font-medium">
-                        {pub.volume} &middot; Editorial
+                        {pub.volume};
                       </span>
                       <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2 mt-1">
                         {pub.title}
@@ -381,7 +389,7 @@ export default function Home() {
           </div>
 
           {/* Editorial Board */}
-          <div>
+          {/* <div>
             <h2 className="text-2xl font-bold text-foreground mb-6">
               Editorial Board
             </h2>
@@ -415,7 +423,7 @@ export default function Home() {
             >
               View full board <ArrowRight className="size-4" />
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -427,7 +435,7 @@ export default function Home() {
               <h2 className="text-2xl font-bold text-foreground mb-4">
                 About the Journal
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-justify">
                 The International Journal of Bharatiya Knowledge System is an
                 annual multidisciplinary journal published by Vidya Bharati
                 Uchcha Shiksha Sansthan. This is a research based academic
@@ -435,7 +443,7 @@ export default function Home() {
                 in the fields of social sciences, literature, sciences, cultural
                 studies and more, that relate to Bharatiya knowledge tradition.
               </p>
-              <p className="text-muted-foreground leading-relaxed mt-4">
+              <p className="text-muted-foreground leading-relaxed text-justify mt-4">
                 The journal facilitates research works that trace, document, and
                 take forward the intellectual and civilizational legacy of
                 Bharat, and contribute to the academic resurgence and relevance
@@ -488,21 +496,21 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <a
               href="/submit-paper"
-              className="group rounded-2xl border-2 border-dashed border-primary/30 bg-card p-8 text-center hover:border-primary hover:bg-primary/5 transition-all"
+              className="bg-gradient-to-br-from-blue-500/10 to-blue-600/5 rounded-2xl border-2 border-dashed border-primary/30  p-8 text-center hover:border-primary  transition-all "
             >
-              <div className="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+              <div className="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors ">
                 <FileText className="size-7 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground text-lg">
-                Submit Your Paper
+                Subscriptions
               </h3>
               <p className="text-sm text-muted-foreground mt-2">
-                Submit your research for peer review and publication
+                Access Journal Issues Here
               </p>
             </a>
             <a
               href="/submission-guidelines"
-              className="group rounded-2xl border-2 border-dashed border-primary/30 bg-card p-8 text-center hover:border-primary hover:bg-primary/5 transition-all"
+              className="group rounded-2xl border-2 border-dashed border-primary/30 bg-gradient-to-br-from-green-500/10 to-green-600/5 p-8 text-center hover:border-primary hover:bg-primary/5 transition-all"
             >
               <div className="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                 <BookOpen className="size-7 text-primary" />
@@ -516,7 +524,7 @@ export default function Home() {
             </a>
             <a
               href="/archives"
-              className="group rounded-2xl border-2 border-dashed border-primary/30 bg-card p-8 text-center hover:border-primary hover:bg-primary/5 transition-all"
+              className="group rounded-2xl border-2 border-dashed border-primary/30 bg-gradient-to-br-from-purple-500/10 to-purple-600/5 p-8 text-center hover:border-primary hover:bg-primary/5 transition-all"
             >
               <div className="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                 <Download className="size-7 text-primary" />

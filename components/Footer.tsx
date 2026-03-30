@@ -96,14 +96,7 @@ export function Footer() {
                   Indexing
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Open Access
-                </a>
-              </li>
+              
             </ul>
           </div>
           <div>
@@ -118,7 +111,7 @@ export function Footer() {
                 </a>
               </li>
               <li className="text-sm text-muted-foreground">
-                +91-9311331434
+                0120-4338616, 9999694251
               </li>
               <li>
                 <a

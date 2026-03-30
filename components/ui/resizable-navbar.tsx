@@ -234,13 +234,13 @@ export const NavbarLogo = () => {
   return (
     <a
       href="#"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+      className="relative z-20 mr-4 flex items-center space-x-4 px-2 py-1 text-sm font-normal  text-black"
     >
       <img
-        src="logoprinci.png"
+        src="logomainnn.svg"
         alt="logo"
-        width={100}
-        height={100}
+        width={200}
+        height={200}
       />
       <span className="font-medium text-black dark:text-white"></span>
     </a>
@@ -252,7 +252,7 @@ export const NavbarButton = ({
   as: Tag = "a",
   children,
   className,
-  variant = "primary",
+  variant = "dark",
   ...props
 }: {
   href?: string;

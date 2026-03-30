@@ -26,10 +26,7 @@ export function Navigation() {
       name: "Submission Guidelines",
       link: "/submission-guidelines",
     },
-    {
-      name: "Submit Your Paper",
-      link: "/submit-paper",
-    },
+   
     {
       name: "Editorial Board",
       link: "/editorial-board",
@@ -59,7 +56,7 @@ export function Navigation() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
-            <NavbarButton variant="primary">Publish</NavbarButton>
+            <NavbarButton variant="dark">Sumbit Your Paper</NavbarButton>
           </div>
         </NavBody>
 
@@ -93,15 +90,9 @@ export function Navigation() {
                 variant="primary"
                 className="w-full"
               >
-                Login
+                Sumbit Your Paper
               </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Start Publishing 
-              </NavbarButton>
+              
             </div>
           </MobileNavMenu>
         </MobileNav>
