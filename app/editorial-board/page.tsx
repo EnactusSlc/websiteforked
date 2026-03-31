@@ -93,7 +93,7 @@ const boardMembers = [
   {
     name: "Prof. Surendra Kumar Sia",
     affiliation: "Professor, Department of Psychology, University of Delhi",
-    email: "",
+    email: "sksia@psychology.du.ac.in",
     location: "Delhi",
   },
 ];
