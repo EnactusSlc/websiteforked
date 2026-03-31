@@ -50,7 +50,7 @@ const boardMembers = [
   {
     name: "Dr. Sanjeev Kumar Ningombam",
     affiliation:
-      "Centre Head, Dr APJ Abdul Kalam Centre for Policy Research and Analysis, IIM Shillong",
+      "Centre Head, Dr. APJ Abdul Kalam Centre for Policy Research and Analysis, IIM Shillong",
     email: "sanjeev@iimshillong.ac.in",
     location: "Shillong",
   },

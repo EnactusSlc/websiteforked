@@ -108,9 +108,9 @@ export default function ArchivesPage() {
                 Volume 2, August 2025
               </h2>
             </div>
-            <p className="text-muted-foreground mb-6">
+            {/* <p className="text-muted-foreground mb-6">
               Online First &middot; {articles.length} Articles
-            </p>
+            </p> */}
             <p className="text-sm text-muted-foreground mb-6">
               Editorial
             </p>
