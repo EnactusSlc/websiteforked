@@ -2,7 +2,7 @@ import { Footer } from "@/components/Footer";
 import { Crown, Star, Users, Mail } from "lucide-react";
 
 const patron = {
-  name: "Prof. Kailash Chan Sharma",
+  name: "Prof. Kailash Chand Sharma",
   role: "Patron",
   affiliation: "Chairman, Haryana State Higher Education Council, Haryana",
   email: "kailashcsg@gmail.com",
