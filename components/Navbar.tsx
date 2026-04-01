@@ -58,7 +58,9 @@ export function Navigation() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
-            <NavbarButton variant="dark">Submit Your Paper</NavbarButton>
+            <NavbarButton variant="dark" href="/coming-soon">
+              Submit Your Paper
+            </NavbarButton>
           </div>
         </NavBody>
 
@@ -91,6 +93,7 @@ export function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"
+                href="/coming-soon"
               >
                 Submit Your Paper
               </NavbarButton>

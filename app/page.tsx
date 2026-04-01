@@ -252,6 +252,9 @@ export default function Home() {
                   The International Journal of Bharatiya Knowledge System
                 </h1>
               </div>
+              <h2 className="text-lg font-semibold text-black/80 mb-4">
+                A Peer Reviewed International Multi- Disciplinary Journal   
+              </h2>
               <p className="text-black/80 text-center mb-2 max-w-2xl text-sm md:text-base drop-shadow">
                 ISSN (Online): 3048-7315 &nbsp;|&nbsp; ISSN (Print): 3107-3727
               </p>
@@ -480,12 +483,14 @@ export default function Home() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Peer-reviewed multidisciplinary research",
                   "Focus on Bharatiya knowledge traditions",
                   "Social sciences, literature, and cultural studies",
                   "Vedic, Ayurvedic, and philosophical research",
                   "Historical and civilizational studies",
                   "Sciences and mathematics in Bharatiya context",
+                  "Sciences and IKS",
+                  "Mathematics and IKS",
+                  "Value, Business and Society",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -509,7 +514,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <a
-              href="/submit-paper"
+              href="/coming-soon"
               className="group rounded-2xl border border-border bg-gradient-to-br from-blue-500/10 to-blue-600/5 p-8 text-center hover:shadow-md transition-all"
             >
               <div className="size-14 rounded-2xl bg-gradient-to-br from-blue-500/15 to-blue-600/10 flex items-center justify-center mx-auto mb-4 transition-colors">
@@ -519,7 +524,7 @@ export default function Home() {
                 Subscriptions
               </h3>
               <p className="text-sm text-muted-foreground mt-2">
-                Access Journal Issues Here
+                Coming Soon
               </p>
             </a>
             <a
